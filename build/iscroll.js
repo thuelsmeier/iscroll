@@ -604,7 +604,7 @@ IScroll.prototype = {
 /* REPLACE START: _move */
 
 		if ( timestamp - this.startTime > 300 ) {
-			this.startTime = timestamp;
+			this.startTime = timestamp - 1;
 			this.startX = this.x;
 			this.startY = this.y;
 		}
